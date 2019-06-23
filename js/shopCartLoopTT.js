@@ -96,6 +96,14 @@ new Vue({
                 }
             });
             this.isSelectedAll = flag;
+        },
+        
+         //7.删除按钮
+        clickTrash(index, shop){
+        	var flag = confirm("确定删除" + shop.shopName + "？");
+        	if (flag) {
+        		this.shopListArr.splice(index,1)
+        	}
         }
-    },
+    }
 })
