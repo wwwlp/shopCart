@@ -50,7 +50,7 @@
                                    <input type="tel" value="shop.shopNumber" v-model="shop.shopNumber">
                                    <span @click="singerShopPrice(shop, true)">+</span>
                                </div>
-                               <div class="shop_deal_right" @click="clickTrash(shop)">
+                               <div class="shop_deal_right" @click="clickTrash(index, shop)">
                                    <span></span>
                                    <span></span>
                                </div>
@@ -73,16 +73,7 @@
                <a href="index.html" class="pay">去结算</a>
            </div>
        </div>
-       <!--弹出面板-->
-       <!-- <div class="panel" :class="{'panel_is_show': isHideDelPanel}">
-           <div class="panel_content">
-               <div class="panel_title">您确认删除这个商品吗?</div>
-               <div class="panel_footer">
-                   <button class="cancel" @click="isHideDelPanel = true">取消</button>
-                   <button class="submit" @click="delShop()">确定</button>
-               </div>
-           </div>
-       </div> -->
+       
    </div>
 
 <script src="lib/vue.js"></script> 
